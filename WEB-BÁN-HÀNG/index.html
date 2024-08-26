@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- title -->
+    <title>Thực phẩm xanh</title>
+    <!--  -->
+
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/bootstrap5/css/bootstrap.min.css"
+    />
+    <script src="assets/bootstrap5/js/bootstrap.min.js"></script>
+    <!--  -->
+
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!--  -->
+
+    <!-- font chữ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--  -->
+
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/favicon//apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon//favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon//favicon-16x16.png"
+    />
+    <link rel="manifest" href="/assets/favicon//site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/assets/favicon//safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <!--  -->
+
+    <!-- css -->
+    <link rel="stylesheet" href="/assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+
+    <!--  -->
+  </head>
+
+  <body>
+    <!-- header -->
+    <header class="header fixed">
+      <div class="container">
+        <div class="header__body">
+          <!-- logo -->
+          <img
+            src="assets/img/logo.png"
+            alt="Thực phẩm xanh"
+            class="header__body--logo logo--mobile"
+          />
+          <!--  -->
+
+          <!-- menu -->
+          <nav class="header__body--menu">
+            <ul class="header__body--list" id="pc__body--list">
+              <li>
+                <a href="#" class="active header__body--link">Trang chủ</a>
+              </li>
+              <li>
+                <a href="#" class="header__body--link">Giới thiệu</a>
+              </li>
+              <li>
+                <a href="#" class="header__body--link">Sản phẩm</a>
+              </li>
+              <li>
+                <a href="#" class="header__body--link">Tin tức</a>
+              </li>
+              <li>
+                <a href="#" class="header__body--link">Liên hệ</a>
+              </li>
+            </ul>
+          </nav>
+          <!--  -->
+
+          <!-- login - signup -->
+          <div class="header__body--btn">
+            <a href="#" class="btn header__body--signup">Đăng ký</a>
+          </div>
+          <!--  -->
+        </div>
+      </div>
+    </header>
+    <!--  -->
+
+    <!-- tallet & mobile -->
+    <div class="mobile__header">
+      <input
+        type="checkbox"
+        name="menu__checkbox"
+        id="menu__checkbox"
+        class="menu__checkbox"
+        hidden
+      />
+
+      <label for="menu__checkbox">
+        <svg
+          class="mobile-header__icon"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 448 512"
+        >
+          <path
+            fill="currentColor"
+            d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+          />
+        </svg>
+      </label>
+      <label for="menu__checkbox" class="mobile__header--overlay"></label>
+      <div class="mobile__menu--drawer">
+        <div class="menu__drawer--top">
+          <!-- logo -->
+          <img
+            src="assets/img/logo.png"
+            alt="Thực phẩm xanh"
+            class="header__body--logo mobile__header--logo"
+          />
+          <!-- icon logo -->
+          <label for="menu__checkbox">
+            <svg
+              class="close__menu"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z"
+              />
+            </svg>
+          </label>
+        </div>
+        <ul id="mobile__menu--list"></ul>
+        <div class="separate"></div>
+        <div class="menu__show-on">
+          <li class="mobile__menu--item">
+            <a href="#" class="mobile__menu--link">Đăng kí</a>
+          </li>
+        </div>
+      </div>
+    </div>
+
+    <!-- main -->
+    <main>
+      <div class="container">
+        <!-- banner -->
+        <div class="banner">
+          <figure class="banner__left">
+            <img
+              src="assets/img/bg_1.jpg"
+              alt="Thực phẩm xanh"
+              class="banner__img"
+            />
+          </figure>
+
+          <div class="banner__right">
+            <h1 class="heading banner__right--title">RAU CỦ QUẢ TƯƠI NGON</h1>
+            <p class="banner__right--desc desc">
+              TPX ra đời với sứ mệnh trở thành nhà cung cấp đáng tin cậy, cung
+              cấp các sản phẩm tự nhiên, an toàn, tư vấn và định hướng lối sống
+              lành mạnh, hướng cộng đồng tới một cuộc sống khỏe mạnh toàn diện
+              và hạnh phúc.
+            </p>
+            <div class="banner__right--cta">
+              <a href="#" class="btn banner__right--btn">Xem chi tiết</a>
+              <button class="banner__right--video">
+                <a class="fa fa-play"></a>
+                <span>Xem video</span>
+              </button>
+            </div>
+            <h3 class="heading banner__right--recent">
+              Đa dạng sản phẩm và nhà cung cấp
+            </h3>
+            <p class="banner__right--desc desc">
+              <strong>300+</strong> Sản phẩm <strong>200+</strong> Nhà cung cấp
+            </p>
+          </div>
+        </div>
+        <!--  -->
+
+        <!-- service -->
+        <div class="service">
+          <div class="service__item">
+            <div class="service__item--icon">
+              <span class="service__item--span1"></span>
+              <i class="fa-solid fa-truck-fast"></i>
+            </div>
+            <div class="service__item--content">
+              <h3 class="service__item--title">Giao hàng miễn phí</h3>
+              <p class="service__item--desc desc">Đơn trên 100k</p>
+            </div>
+          </div>
+          <div class="service__item">
+            <div class="service__item--icon">
+              <span class="service__item--span2"></span>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="service__item--content">
+              <h3 class="service__item--title">Sản phẩm chất lượng</h3>
+              <p class="service__item--desc desc">5 sao chất lượng</p>
+            </div>
+          </div>
+          <div class="service__item">
+            <div class="service__item--icon">
+              <span class="service__item--span3"></span>
+              <i class="fa-solid fa-leaf"></i>
+            </div>
+            <div class="service__item--content">
+              <h3 class="service__item--title">Luôn tươi mới</h3>
+              <p class="service__item--desc desc">Gói sản phẩm tốt</p>
+            </div>
+          </div>
+          <div class="service__item">
+            <div class="service__item--icon">
+              <span class="service__item--span4"></span>
+              <i class="fa-solid fa-headset"></i>
+            </div>
+            <div class="service__item--content">
+              <h3 class="service__item--title">Hỗ trợ</h3>
+              <p class="service__item--desc desc">24/7</p>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+
+        <!-- image -->
+        <div class="image">
+          <div class="image__item image__item--1">
+            <figcaption class="image__item--caption1">
+              <h3 class="image__item--title1">Rau</h3>
+              <p class="image__item--desc desc">Bảo vệ sức khỏe của mọi nhà</p>
+              <a href="#" class="btn image__item--btn">Xem chi tiết</a>
+            </figcaption>
+            <figure>
+              <img
+                src="/assets/img/category.jpg"
+                alt="Hoa qua"
+                class="image__item--img img__thumb"
+              />
+            </figure>
+          </div>
+          <div class="image__item image__item--2">
+            <figure>
+              <img
+                src="/assets/img/category-1.jpg"
+                alt="Rau củ"
+                class="image__item--img"
+              />
+            </figure>
+            <figcaption>
+              <h3 class="image__item--title">Rau củ</h3>
+            </figcaption>
+          </div>
+          <div class="image__item image__item--3">
+            <figure>
+              <img
+                src="/assets/img/category-2.jpg"
+                alt="Hoa qua"
+                class="image__item--img"
+              />
+            </figure>
+            <figcaption>
+              <h3 class="image__item--title">Hoa qủa</h3>
+            </figcaption>
+          </div>
+          <div class="image__item image__item--4">
+            <figure>
+              <img
+                src="/assets/img/category-3.jpg"
+                alt="Nước ép"
+                class="image__item--img"
+              />
+            </figure>
+            <figcaption>
+              <h3 class="image__item--title">Nước ép</h3>
+            </figcaption>
+          </div>
+          <div class="image__item image__item--5">
+            <figure>
+              <img
+                src="/assets/img/category-4.jpg"
+                alt="Hạt khô"
+                class="image__item--img"
+              />
+            </figure>
+            <figcaption>
+              <h3 class="image__item--title">Hạt khô</h3>
+            </figcaption>
+          </div>
+        </div>
+        <!--  -->
+
+        <!-- product -->
+        <div class="product">
+          <!-- Nhập khẩu -->
+          <div class="product__item--header">
+            <h1 class="heading product__item--title">Trái cây nhập khẩu</h1>
+            <p class="product__item--desc desc">
+              Là nhà cung cấp thực phẩm tươi sạch hàng đầu khu vực miền Bắc
+            </p>
+          </div>
+          <div class="product__item">
+            <div class="product__item--content">
+              <img
+                src="/assets/img/product-1.jpg"
+                alt=""
+                class="product__item--img"
+              />
+              <p class="product__item--desc desc">Ớt chuông</p>
+              <h3 class="product__item--hedding">60.000<span>đ</span></h3>
+              <a href="#" class="btn product__item--btn">Mua ngay</a>
+            </div>
+            <div class="product__item--content">
+              <img
+                src="/assets/img/product-2.jpg"
+                alt=""
+                class="product__item--img"
+              />
+              <p class="product__item--desc desc">Dâu tây</p>
+              <h3 class="product__item--hedding">60.000<span>đ</span></h3>
+              <a href="#" class="btn product__item--btn">Mua ngay</a>
+            </div>
+            <div class="product__item--content">
+              <img
+                src="/assets/img/product-3.jpg"
+                alt=""
+                class="product__item--img"
+              />
+              <p class="product__item--desc desc">Đậu xanh</p>
+              <h3 class="product__item--hedding">60.000<span>đ</span></h3>
+              <a href="#" class="btn product__item--btn">Mua ngay</a>
+            </div>
+            <div class="product__item--content">
+              <img
+                src="/assets/img/product-4.jpg"
+                alt=""
+                class="product__item--img"
+              />
+              <p class="product__item--desc desc">Bắp cải tím</p>
+              <h3 class="product__item--hedding">60.000<span>đ</span></h3>
+              <a href="#" class="btn product__item--btn">Mua ngay</a>
+            </div>
+          </div>
+          <div class="product__item--icon">
+            <a href="#" class="btn product__icon--btn">Xem thêm</a>
+          </div>
+
+          <!-- Nước ép -->
+          <div class="product__item--header">
+            <h1 class="heading product__item--title">Nước ép</h1>
+            <p class="product__item--desc desc">
+              Là nhà cung cấp thực phẩm tươi sạch hàng đầu khu vực miền Bắc
+            </p>
+          </div>
+          <div class="product__item">
+            <div class="product__item--content">
+              <img
+                src="/assets/img/product-1.jpg"
+                alt=""
+                class="product__item--img"
+              />
+              <p class="product__item--desc desc">Ớt chuông</p>
+              <h3 class="product__item--hedding">60.000<span>đ</span></h3>
+              <a href="#" class="btn product__item--btn">Mua ngay</a>
+            </div>
+            <div class="product__item--content">
+              <img
+                src="/assets/img/product-2.jpg"
+                alt=""
+                class="product__item--img"
+              />
+              <p class="product__item--desc desc">Dâu tây</p>
+              <h3 class="product__item--hedding">60.000<span>đ</span></h3>
+              <a href="#" class="btn product__item--btn">Mua ngay</a>
+            </div>
+            <div class="product__item--content">
+              <img
+                src="/assets/img/product-3.jpg"
+                alt=""
+                class="product__item--img"
+              />
+              <p class="product__item--desc desc">Đậu xanh</p>
+              <h3 class="product__item--hedding">60.000<span>đ</span></h3>
+              <a href="#" class="btn product__item--btn">Mua ngay</a>
+            </div>
+            <div class="product__item--content">
+              <img
+                src="/assets/img/product-4.jpg"
+                alt=""
+                class="product__item--img"
+              />
+              <p class="product__item--desc desc">Bắp cải tím</p>
+              <h3 class="product__item--hedding">60.000<span>đ</span></h3>
+              <a href="#" class="btn product__item--btn">Mua ngay</a>
+            </div>
+          </div>
+          <div class="product__item--icon">
+            <a href="#" class="btn product__icon--btn">Xem thêm</a>
+          </div>
+
+          <!-- Nội địa -->
+          <div class="product__item--header">
+            <h1 class="heading product__item--title">Sản phẩm nội địa</h1>
+            <p class="product__item--desc desc">
+              Là nhà cung cấp thực phẩm tươi sạch hàng đầu khu vực miền Bắc
+            </p>
+          </div>
+          <div class="product__item">
+            <div class="product__item--content">
+              <img
+                src="/assets/img/product-1.jpg"
+                alt=""
+                class="product__item--img"
+              />
+              <p class="product__item--desc desc">Ớt chuông</p>
+              <h3 class="product__item--hedding">60.000<span>đ</span></h3>
+              <a href="#" class="btn product__item--btn">Mua ngay</a>
+            </div>
+            <div class="product__item--content">
+              <img
+                src="/assets/img/product-2.jpg"
+                alt=""
+                class="product__item--img"
+              />
+              <p class="product__item--desc desc">Dâu tây</p>
+              <h3 class="product__item--hedding">60.000<span>đ</span></h3>
+              <a href="#" class="btn product__item--btn">Mua ngay</a>
+            </div>
+            <div class="product__item--content">
+              <img
+                src="/assets/img/product-3.jpg"
+                alt=""
+                class="product__item--img"
+              />
+              <p class="product__item--desc desc">Đậu xanh</p>
+              <h3 class="product__item--hedding">60.000<span>đ</span></h3>
+              <a href="#" class="btn product__item--btn">Mua ngay</a>
+            </div>
+            <div class="product__item--content">
+              <img
+                src="/assets/img/product-4.jpg"
+                alt=""
+                class="product__item--img"
+              />
+              <p class="product__item--desc desc">Bắp cải tím</p>
+              <h3 class="product__item--hedding">60.000<span>đ</span></h3>
+              <a href="#" class="btn product__item--btn">Mua ngay</a>
+            </div>
+          </div>
+          <div class="product__item--icon">
+            <a href="#" class="btn product__icon--btn">Xem thêm</a>
+          </div>
+        </div>
+        <!--  -->
+      </div>
+      <div class="feedback">
+        <div class="container">
+          <!-- feedback -->
+          <div class="feedback__body">
+            <div class="feedback__item">
+              <div>
+                <img
+                  src="/assets/img/block-quote.svg"
+                  alt=""
+                  class="feedback__item--img"
+                />
+                <p class="feedback__item--desc desc">
+                  "Bạn có thể phát trực tiếp để bán trái cây. Cung cấp thông tin
+                  hữu ích, trả lời câu hỏi của khách hàng và chia sẻ những bí
+                  quyết về trồng nuôi, chăm sóc và chế biến trái cây để mang lại
+                  hiệu ứng mua hàng tốt."
+                </p>
+                <div class="feedback__item--student">
+                  <p class="feedback__item--name desc">
+                    <strong>Nguyễn Thanh Huy,</strong> sinh viên.
+                  </p>
+                </div>
+                <div>
+                  <div class="feedback__item--icon">
+                    <img
+                      src="/assets/img/prev.svg"
+                      alt=""
+                      class="feedback__icon--img"
+                    />
+                    <img
+                      src="/assets/img/next.svg"
+                      alt=""
+                      class="feedback__icon--img"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!--  -->
+            </div>
+            <img
+              src="/assets/img/person_2.jpg"
+              alt=""
+              class="feedback__icon--img1 img-std"
+            />
+            <img
+              src="/assets/img/person_3.jpg"
+              alt=""
+              class="feedback__icon--img2 img-std"
+            />
+            <img
+              src="/assets/img/person_4.jpg"
+              alt=""
+              class="feedback__icon--img3 img-std"
+            />
+            <img
+              src="/assets/img/person_2.jpg"
+              alt=""
+              class="feedback__icon--img4 img-std"
+            />
+            <img
+              src="/assets/img/person_3.jpg"
+              alt=""
+              class="feedback__icon--img5 img-std"
+            />
+            <img
+              src="/assets/img/person_4.jpg"
+              alt=""
+              class="feedback__icon--img6 img-std"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- understand -->
+      <div class="understand">
+        <div class="container">
+          <div class="understand__body">
+            <figure>
+              <img
+                src="/assets/img/partner-1.png"
+                alt=""
+                class="understand__body--img"
+              />
+            </figure>
+            <figure>
+              <img
+                src="/assets/img/partner-2.png"
+                alt=""
+                class="understand__body--img"
+              />
+            </figure>
+            <figure>
+              <img
+                src="/assets/img/partner-3.png"
+                alt=""
+                class="understand__body--img"
+              />
+            </figure>
+            <figure>
+              <img
+                src="/assets/img/partner-4.png"
+                alt=""
+                class="understand__body--img"
+              />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__body">
+          <!-- item 1 -->
+          <ul class="footer__list">
+            <figure>
+              <img
+                src="assets/img/logo.png"
+                alt="Thực phẩm xanh"
+                class="header__body--logo footer__list--logo"
+              />
+            </figure>
+          </ul>
+          <!-- item 2 -->
+          <ul class="footer__list">
+            <p class="desc footer__list--desc">Thực đơn</p>
+            <li class="footer__list--item">Cửa hàng</li>
+            <li class="footer__list--item">Sản phẩm</li>
+            <li class="footer__list--item">Giới thiệu</li>
+          </ul>
+          <!-- footer__list--item 3 -->
+          <ul class="footer__list">
+            <p class="desc footer__list--desc">Giúp đỡ</p>
+            <li class="footer__list--item">Thông tin vận chuyển</li>
+            <li class="footer__list--item">Trả lại & đổi hàng</li>
+            <li class="footer__list--item">Điều khoản & chính sách bảo mật</li>
+          </ul>
+          <!-- footer__list--item 4 -->
+          <ul class="footer__list">
+            <p class="desc footer__list--desc">Địa chỉ</p>
+            <li class="footer__list--item">
+              <i class="fas fa-location-dot"></i>
+              <p class="footer__list--item">
+                203 ABC, DEFGH, VIET NAM
+              </p>
+            </li>
+            <li class="footer__list--item">
+              <i class="fas fa-phone"></i>
+              <p class="footer__list--item">+84 123 456 789</p>
+            </li>
+            <li class="footer__list--item">
+              <i class="fas fa-envelope"></i>
+              <p class="footer__list--item">nxt@gmail.com</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__bottom">
+          <p class="copyright">Bản quyền: © 2024 Bảo lưu mọi quyền</p>
+        </div>
+      </div>
+    </footer>
+    <!-- javascript -->
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>
